@@ -1,3 +1,5 @@
+Overview:
+
 The program allows you to configure and define battery pack parameters from user-selected cells (e.g. Li-Ion or LiPo)
 
 Other program functions:
