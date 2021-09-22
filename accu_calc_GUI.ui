@@ -1,0 +1,678 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="ttk.Frame" id="top_level_frame">
+    <property name="height">600</property>
+    <property name="padding">10</property>
+    <property name="width">600</property>
+    <layout manager="grid">
+      <property name="propagate">True</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="label_4">
+        <property name="font">{Arial} 14 {bold}</property>
+        <property name="justify">right</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">ACCUMUCALCULATOR</property>
+        <layout manager="grid">
+          <property name="propagate">True</property>
+          <property type="col" id="0" name="pad">10</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="input_frame">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property type="col" id="0" name="pad">10</property>
+        </layout>
+        <child>
+          <object class="ttk.Labelframe" id="DANE">
+            <property name="height">200</property>
+            <property name="text" translatable="yes">DANE</property>
+            <property name="width">200</property>
+            <layout manager="grid">
+              <property name="pady">10</property>
+              <property name="propagate">True</property>
+              <property name="sticky">n</property>
+              <property type="col" id="0" name="minsize">0</property>
+              <property type="col" id="0" name="pad">10</property>
+              <property type="col" id="0" name="uniform" />
+              <property type="col" id="0" name="weight">0</property>
+              <property type="row" id="0" name="pad">0</property>
+              <property type="row" id="0" name="weight">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Labelframe" id="OGNIWO">
+                <property name="height">200</property>
+                <property name="text" translatable="yes">OGNIWO</property>
+                <property name="width">200</property>
+                <layout manager="grid">
+                  <property name="padx">5</property>
+                  <property name="pady">5</property>
+                  <property name="propagate">True</property>
+                </layout>
+                <child>
+                  <object class="ttk.Label" id="label_1">
+                    <property name="text" translatable="yes">Rodzaj ogniwa</property>
+                    <layout manager="grid">
+                      <property name="propagate">True</property>
+                      <property type="row" id="0" name="minsize">0</property>
+                      <property type="row" id="0" name="weight">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="label_2">
+                    <property name="text" translatable="yes">Napięcie max [V]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="label_3">
+                    <property name="text" translatable="yes">Napięcie nominalne [V]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">2</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="label_4_1">
+                    <property name="text" translatable="yes">Pojemność nominalna [mAh]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">3</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="label_5">
+                    <property name="text" translatable="yes">Max prąd rozładowania [A]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">4</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="label_6">
+                    <property name="text" translatable="yes">Szczytowy prąd rozładowania [A]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">5</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="label_7">
+                    <property name="text" translatable="yes">Masa ogniwa [g]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">6</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Entry" id="lab_2">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="pady">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Entry" id="lab_3">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="pady">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">2</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Entry" id="lab_4">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="pady">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">3</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Entry" id="lab_5">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="pady">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">4</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Entry" id="lab_6">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="pady">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">5</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Entry" id="lab_7">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="pady">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">6</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Combobox" id="lab_1">
+                    <property name="state">readonly</property>
+                    <property name="validate">none</property>
+                    <property name="values">- SonyUS18650_VTC6 SamsungINR18650-35E PanasonicUR18650NSX </property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="pady">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property type="row" id="0" name="minsize">0</property>
+                      <property type="row" id="0" name="weight">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Button" id="button_1_2">
+                    <property name="command">select</property>
+                    <property name="text" translatable="yes">Wybierz</property>
+                    <layout manager="grid">
+                      <property name="column">2</property>
+                      <property name="padx">2</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property type="row" id="0" name="minsize">0</property>
+                      <property type="row" id="0" name="weight">0</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Labelframe" id="PAKIET">
+                <property name="height">200</property>
+                <property name="text" translatable="yes">PAKIET</property>
+                <property name="width">200</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="padx">5</property>
+                  <property name="pady">5</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+                <child>
+                  <object class="ttk.Label" id="label_8">
+                    <property name="text" translatable="yes"> Ogniw w szeregu   </property>
+                    <layout manager="grid">
+                      <property name="pady">5</property>
+                      <property name="propagate">True</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="label_9">
+                    <property name="text" translatable="yes"> Ogniw w rzędzie   </property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Spinbox" id="lab_8">
+                    <property name="exportselection">true</property>
+                    <property name="from_">1</property>
+                    <property name="increment">1</property>
+                    <property name="state">normal</property>
+                    <property name="to">100000</property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Spinbox" id="lab_9">
+                    <property name="exportselection">true</property>
+                    <property name="from_">1</property>
+                    <property name="increment">1</property>
+                    <property name="justify">left</property>
+                    <property name="state">normal</property>
+                    <property name="to">100000</property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Labelframe" id="AKUMULATOR">
+                <property name="height">200</property>
+                <property name="relief">flat</property>
+                <property name="text" translatable="yes">AKUMULATOR</property>
+                <property name="width">200</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="padx">5</property>
+                  <property name="pady">5</property>
+                  <property name="propagate">True</property>
+                  <property name="row">2</property>
+                </layout>
+                <child>
+                  <object class="ttk.Label" id="label_10">
+                    <property name="text" translatable="yes">Pakietów w szeregu</property>
+                    <layout manager="grid">
+                      <property name="pady">5</property>
+                      <property name="propagate">True</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="label_11">
+                    <property name="text" translatable="yes">Pakietów w rzędzie</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Spinbox" id="lab_10">
+                    <property name="from_">1</property>
+                    <property name="increment">1</property>
+                    <property name="to">100000</property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Spinbox" id="lab_11">
+                    <property name="cursor">arrow</property>
+                    <property name="from_">1</property>
+                    <property name="increment">1</property>
+                    <property name="to">100000</property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Labelframe" id="WYNIKI">
+            <property name="height">200</property>
+            <property name="text" translatable="yes">WYNIKI</property>
+            <property name="width">300</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="padx">20</property>
+              <property name="pady">10</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+              <property type="row" id="0" name="pad">0</property>
+              <property type="row" id="0" name="weight">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Labelframe" id="AKUMULATOR_WYNIKI">
+                <property name="height">200</property>
+                <property name="text" translatable="yes">AKUMULATOR</property>
+                <property name="width">300</property>
+                <layout manager="grid">
+                  <property name="padx">5</property>
+                  <property name="pady">5</property>
+                  <property name="propagate">True</property>
+                </layout>
+                <child>
+                  <object class="ttk.Label" id="Ilosc_ogniw">
+                    <property name="text" translatable="yes">Ilość ogniw</property>
+                    <layout manager="grid">
+                      <property name="propagate">True</property>
+                      <property type="row" id="0" name="pad">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Napiecie_max">
+                    <property name="text" translatable="yes">Napięcie max [V]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Napiecie_nominalne">
+                    <property name="text" translatable="yes">Napięcie nominalne [V]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">2</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Prad_max">
+                    <property name="text" translatable="yes">Prąd max [A]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">3</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Prad_szczytowy">
+                    <property name="text" translatable="yes">Prąd szczytowy [A]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">4</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Moc_max">
+                    <property name="text" translatable="yes">Moc max [kW]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">5</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Moc_szczytowa">
+                    <property name="text" translatable="yes">Moc szczytowa [kW]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">6</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Energia_MJ">
+                    <property name="text" translatable="yes">Energia [MJ]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">7</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Energia_Wh">
+                    <property name="text" translatable="yes">Energia [Wh]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">8</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Gestosc_energii">
+                    <property name="text" translatable="yes">Gęstość energii [kWh/kg]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">9</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="Masa_ogniw">
+                    <property name="text" translatable="yes">Masa ogniw [g]</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">10</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="gestosc_energii">
+                    <property name="anchor">w</property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">9</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="ilosc_ogniw">
+                    <property name="takefocus">false</property>
+                    <property name="text" translatable="yes"> </property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="padx">25</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property type="row" id="0" name="pad">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="napiecie_max">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="napiecie_nom">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">2</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="prad_max">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">3</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="prad_szczyt">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">4</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="moc_max">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">5</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="moc_szczyt">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">6</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="energia_MJ">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">7</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="energia_Wh">
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">8</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="masa_ogniw">
+                    <property name="anchor">w</property>
+                    <property name="font">TkDefaultFont</property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">10</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="button_frame">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="pady">5</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">e</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="clear_button">
+            <property name="command">clear</property>
+            <property name="text" translatable="yes">Wyczyść</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="ipadx">5</property>
+              <property name="ipady">3</property>
+              <property name="padx">10</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property type="row" id="0" name="minsize">0</property>
+              <property type="row" id="0" name="pad">0</property>
+              <property type="row" id="0" name="uniform" />
+              <property type="row" id="0" name="weight">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button_1">
+            <property name="command">calculate</property>
+            <property name="text" translatable="yes">Oblicz</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="ipadx">5</property>
+              <property name="ipady">3</property>
+              <property name="padx">10</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property type="row" id="0" name="minsize">0</property>
+              <property type="row" id="0" name="pad">0</property>
+              <property type="row" id="0" name="uniform" />
+              <property type="row" id="0" name="weight">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button_5">
+            <property name="command">save_result</property>
+            <property name="text" translatable="yes">Zapisz wyniki</property>
+            <property name="width">15</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="ipadx">10</property>
+              <property name="ipady">5</property>
+              <property name="padx">95</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property type="col" id="5" name="minsize">0</property>
+              <property type="col" id="5" name="pad">0</property>
+              <property type="col" id="5" name="weight">0</property>
+              <property type="row" id="0" name="minsize">0</property>
+              <property type="row" id="0" name="pad">0</property>
+              <property type="row" id="0" name="uniform" />
+              <property type="row" id="0" name="weight">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="plot_button">
+            <property name="command">plot</property>
+            <property name="text" translatable="yes">Wykres</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="ipadx">5</property>
+              <property name="ipady">3</property>
+              <property name="padx">10</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property type="row" id="0" name="minsize">0</property>
+              <property type="row" id="0" name="pad">0</property>
+              <property type="row" id="0" name="uniform" />
+              <property type="row" id="0" name="weight">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
