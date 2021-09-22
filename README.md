@@ -4,8 +4,9 @@ The program allows you to configure and define battery pack parameters from user
 
 ## Features:
 - Possibility to choose sample cells
+- calculation of battery pack parameters
 - Save calculated parameters to a .txt file
-- Generating a cell discharge graph in a .png file
+- Generate a simple cell discharge graph in a .png file (for sample cells)
 
 ## Technologies:
 - threading
